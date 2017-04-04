@@ -7,4 +7,13 @@ ls      # Command to show contents of directory, (What)
 cd      # Command to change directory, (Navigation)
 date    # Command to show machine time, (When)
 
+/var/root # sh test.sh                                                          
+And now for something COMPLETELY DIFFERENT                                      
+/var/root # cat test.sh                                                         
+# shebang line #!/bin/sh                                                        
+                                                                                
+#!/bin/sh                                                                       
+                                                                                
+echo "And now for something COMPLETELY DIFFERENT"   
+
 
