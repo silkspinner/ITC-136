@@ -1,0 +1,108 @@
+    1  cd #
+    2  cd ~
+    3  cd //
+    4  cd ..
+    5  ls -l
+    6  apt-get EFM
+    7  sudo su
+    8  history
+    9  sudo su
+   10  whoami
+   11  ps
+   12  ps -ux
+   13  ps aux | more
+   14  ps aux | grep firefox
+   15  kill 3053
+   16  kill 3169
+   17  top
+   18  lsof
+   19  lsof | more
+   20  sudo su
+   21  /usr/bin/libreoffice&
+   22  lsof | more
+   23  top | less
+   24  optoptop
+   25  /usr/bin/libreoffice&
+   26  t
+   27  cd ~
+   28  ls -l
+   29  cd desktop
+   30  cd Desk*
+   31  echo "test" >> test.txt
+   32  ls -l
+   33  cat test.txt
+   34  esit
+   35  exit
+   36  cd Desktop
+   37  dir
+   38  cd ..
+   39  ls -l
+   40  vi text.txt
+   41  vi test.txt
+   42  cat examples.desktop
+   43  cd Desktop
+   44  ls -l
+   45  vi test.txt
+   46  :q
+   47  ls -l
+   48  cat test.txt
+   49  vim test.txt
+   50  chmod +x test.txt
+   51  ls -l
+   52  ren test.txt test.sh
+   53  rename test.txt test.sh
+   54  ls -l
+   55  cp test.txt test.sh
+   56  vi test.sh
+   57  test.sh
+   58  bash test.sh
+   59  ls -l
+   60  vi test.sh
+   61  ls -l
+   62  bash test.sh
+   63  ./test.sh
+   64  hitory
+   65  history
+   66  ls 
+   67  ls -l ~/.kde4/share/config/kscreensaverrc
+   68  ls -l ~/.kde4/share/config
+   69  cd ~
+   70  ls -l
+   71  ls -a ~/.kde4/share/config/kscreensaverrc 
+   72  ls -a ~/.kde4
+   73  sudo su
+   74  git
+   75  git confir --global user.name "silkspinner"
+   76  git config --global user.name "silkspinner"
+   77  git clone https://github.com/silkspinner/ITC-136
+   78  ls -l
+   79  cd ITC-136
+   80  git config --global user.name "silkspinner"
+   81  cd ..\desktop
+   82  cd ../desktop
+   83  cd ..
+   84  ls
+   85  cd desktop
+   86  cd Desktop/
+   87  ls
+   88  cd ,,/IT*
+   89  cd ,,/ITC-136
+   90  ls ..
+   91  cd ../ITC-136
+   92  ls
+   93  git
+   94  git status
+   95  ls -l
+   96  cd ITC-136/
+   97  git status
+   98  cd .git
+   99  ls -l
+  100  ls -l branches
+  101  git config --global user.email "rleenims@gmail.com"
+  102  git config --global user.name "silkspinner"
+  103  history >> firstconfig.history
+  104  cat first*
+  105  git status
+  106  rm first*
+  107  cd ..
+  108  history >> firstconfig.history
