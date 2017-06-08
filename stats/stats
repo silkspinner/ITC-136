@@ -1,0 +1,32 @@
+#!/bin/bash
+# script to gather and report important system statistics
+#
+
+clear
+
+# To populate $diskused, use the df command to show information about usage of disk resources
+#    grep the results for "dev/sda1" which is the main hard disk drive
+#    use awk to pull the 5th column which is the percentage disk space used
+diskused=$( df -h | grep "/dev/sda1" | awk '{print $5}' )
+
+# To populate $memfree, use the free command to show human readable variant of memory usage
+#    grep the results for "Mem:" which represents the main system memory
+#    use awk to pull the 7th column which is the memory available in Giga Bytes
+memfree=$( free -mh | grep Mem: | awk '{print $7}' )
+
+# To populate $users, use the who command to everyone that is currently logged in.
+users=$( who )
+
+# To populate $connections, use the netstat command to show network connections
+#    grep the results for "tcp" to filter for just Internet connections
+connections=$( netstat | grep tcp )
+
+echo -en "\e[1;107;90m *** Important System Stats Snapshot ***\e[0m\n
+          \e[1;49;32m     Disk Used: $diskused\e[0m\n
+          \e[1;49;36m     Free Memory: $memfree\e[0m\n\n
+\e[1;107;90m Logged in Users\e[0m\n
+\e[1;49;35m$users\e[0m\n\n
+\e[1;107;90m Open Internet Connections\e[0m\n 
+\e[1;49;93m$connections\e[0m\n
+"
+
